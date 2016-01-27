@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RelayAPP</string>
+
+    <string name="relay_1">Relay 1</string>
+    <string name="relay_2">Relay 2</string>
+    <string name="esp8266">ESP8266 status:</string>
+    <string name="state">State:</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="dialog_network_title">Network</string>
+    <string name="dialog_network_content_error">Error connection with ESP8266. Check wifi connection.</string>
+    <string name="dialog_network_accept">Accept</string>
+
+
+</resources>

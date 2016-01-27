@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".LocationActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/CustomPopupToolbarTheme"
+        app:theme="@style/CustomToolbarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:weightSum="1"
+            app:layout_heightPercent="30%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_marginTopPercent="0%"
+            app:layout_widthPercent="100%">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/relay_1"
+                android:layout_weight="0.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/state"
+                android:gravity="right|center"
+                android:layout_weight="0.2"/>
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:layout_height="match_parent"
+                android:text="New ToggleButton"
+                android:id="@+id/toggleButtonRelay1"
+                android:layout_weight="0.6"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:weightSum="1"
+            app:layout_heightPercent="30%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_marginTopPercent="30%"
+            app:layout_widthPercent="100%">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/relay_2"
+                android:layout_weight="0.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/state"
+                android:gravity="right|center"
+                android:layout_weight="0.2"/>
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:layout_height="match_parent"
+                android:text="New ToggleButton"
+                android:id="@+id/toggleButtonRelay2"
+                android:layout_weight="0.6"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:weightSum="1"
+            app:layout_heightPercent="40%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_marginTopPercent="60%"
+            app:layout_widthPercent="100%">
+
+
+
+            <TextView
+                android:id="@+id/txtESP8266Status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/esp8266"
+                android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</LinearLayout>
